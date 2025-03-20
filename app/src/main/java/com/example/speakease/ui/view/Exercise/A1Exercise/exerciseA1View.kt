@@ -317,7 +317,7 @@ fun ExerciseListScreen(modifier: Modifier = Modifier, navController: NavHostCont
 
 //        // Google Ads Banner at the bottom
 //        GoogleBannerAd(modifier = Modifier.fillMaxWidth(), adId = "ca-app-pub-4910715387270743/3769947946")
-//
+
         GoogleBannerAd(
             modifier = Modifier.fillMaxWidth(),
             adId = "ca-app-pub-3940256099942544/6300978111" // Your Ad Unit ID
