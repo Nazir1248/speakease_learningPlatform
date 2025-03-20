@@ -1,5 +1,6 @@
 package com.example.speakease.ui.view.Exercise.A1Exercise
 
+import Question
 import android.media.MediaPlayer
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -20,9 +21,9 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import com.example.speakease.R
 import com.example.speakease.ui.viewmodel.QuizViewModel
 import getQuestionById
-
 
 
 @Composable
@@ -60,7 +61,7 @@ fun QuizApp(
             verticalArrangement = Arrangement.Center
         ) {
             Text(
-                text = "Exercise ${question.id}",
+                text = "Question ${question.id}",
                 fontSize = 20.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.Black
@@ -215,3 +216,4 @@ fun FinishQuiz(
         }
     )
 }
+
