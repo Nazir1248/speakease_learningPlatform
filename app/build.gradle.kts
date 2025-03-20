@@ -65,7 +65,6 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
 
-
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.runtime.livedata)
 
@@ -75,22 +74,19 @@ dependencies {
     implementation(libs.play.services.auth) // Google Play Services Auth
 
 
-
-//    add google ads in dependency
-    implementation("com.google.android.gms:play-services-ads:23.0.0")
-
+    //    add google ads in dependency
+    implementation(libs.play.services.ads.v2300)
 
 
-
-//Splash Api
-    implementation ("androidx.core:core-splashscreen:1.0.1")
+    //Splash Api
+    implementation (libs.core.splashscreen)
 
     //Compose Navigation
     val nav_version = "2.7.7"
-    implementation ("androidx.navigation:navigation-compose:$nav_version")
+    implementation (libs.androidx.navigation.compose.v277)
 
     //Dagger Hilt
-    implementation ("com.google.dagger:hilt-android:2.55")
+    implementation (libs.hilt.android)
     kapt(libs.hilt.compiler)
     implementation (libs.androidx.hilt.navigation.compose)
 
@@ -107,6 +103,12 @@ dependencies {
     // lottie
     implementation (libs.lottie.compose)
 
+    //splash screen
+    implementation (libs.core.splashscreen)
+
+    //image double tap
+    implementation (libs.androidx.foundation) // Or the latest version
+    implementation (libs.ui )// Or the latest version
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

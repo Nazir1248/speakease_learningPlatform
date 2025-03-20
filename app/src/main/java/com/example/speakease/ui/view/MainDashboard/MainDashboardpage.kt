@@ -14,9 +14,12 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
+import androidx.navigation.compose.rememberNavController
+import com.example.speakease.ui.view.Exercise.A1Exercise.ExerciseListScreen
 
 
 @Composable
@@ -95,3 +98,10 @@ fun MainDashboardPage(modifier: Modifier = Modifier, navController: NavHostContr
 
 
 
+
+@Preview(showBackground = true)
+@Composable
+fun PreviewExerciseList() {
+    val navController = rememberNavController()
+    MainDashboardPage(modifier = Modifier, navController = navController)
+}

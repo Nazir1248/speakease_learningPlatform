@@ -10,8 +10,11 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
+import androidx.navigation.compose.rememberNavController
+import com.example.speakease.ui.view.Exercise.A1Exercise.ExerciseListScreen
 import com.example.speakease.ui.viewmodel.AuthState
 import com.example.speakease.ui.viewmodel.AuthViewModel
 
@@ -42,3 +45,5 @@ fun HomePage(modifier: Modifier = Modifier, navController: NavHostController, au
         }
     }
 }
+
+

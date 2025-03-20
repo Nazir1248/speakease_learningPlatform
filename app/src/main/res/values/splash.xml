@@ -2,7 +2,14 @@
 <resources>
     <style name="App.Starting.Theme"  parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/splash</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/exam</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_screen</item>
         <item name="postSplashScreenTheme">@style/Theme.Speakease</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
     </style>
 </resources>
+
+
+
+<!--<item name="android:windowNoTitle">true</item>-->
+<!--<item name="android:windowActionBar">false</item>-->

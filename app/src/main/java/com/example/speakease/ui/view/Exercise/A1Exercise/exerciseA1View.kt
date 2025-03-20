@@ -408,5 +408,5 @@ fun ExerciseCard(exercise: Exercise, onClick: () -> Unit) {
 @Composable
 fun PreviewExerciseList() {
     val navController = rememberNavController()
-    ExerciseListScreen(navController = navController)
+    ExerciseListScreen(modifier = Modifier, navController = navController)
 }
